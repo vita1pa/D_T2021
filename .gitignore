@@ -1,7 +1,5 @@
-README.md
-*.gitignore
-/__pycache__/
-*.git
+
+__pycache__/
 
 /venv/
 /.idea/
