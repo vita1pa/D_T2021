@@ -7,7 +7,7 @@ class DropboxApp():
 
 	def __init__(self):
 
-		self.oauth_key = 'sl.A-b6uKjbBpMuBwRcLYb72fc_z2pjDUb5cM_LOn-4sLRFjqBkkiVbayEHQGZ0RpHi5JCg-40fxN6V6RS-4hnJ8h1shWQivGsTtIrYanOk15M70TT1LxQDCTVTsnaF7NGfc5Pz98Oh'
+		self.oauth_key = 'c4OM-PyK2c8AAAAAAAAAAbXhRUHuxLSL5oeN_Hoj6zk1lqUAz2b4pt6qqHv8dB67'
 		self.last_responses = dict()
 
 
