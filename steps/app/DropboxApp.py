@@ -29,16 +29,15 @@ class DropboxApp():
 			}
 		)
 
-	def getFileMetaData(self, file):
+	def getMetaData(self, file):
 
-		request = requests.post("https://api.dropboxapi.com/2/sharing/get_file_metadata",
+		request = requests.post("https://api.dropboxapi.com/2/files/get_metadata",
 					headers={
 						"Content-Type":"application/json",
 						"Authorization":"Bearer "+self.oauth_key
 					},
-					data="{\r\n    \"file\": \""
-						+self.getFileId(file)
-						+ "\",\r\n    \"actions\": []\r\n}"
+					data="{\"path\": \"" + self.getFileId(file) + "\",\"include_media_info\": false,\"include_deleted\": false,\"include_has_explicit_shared_members\": false}")
+
 	    		)
 		request_json = request.json()
 		request_json['Success'] = request.ok
