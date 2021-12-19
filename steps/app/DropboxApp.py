@@ -38,7 +38,7 @@ class DropboxApp():
 					},
 					data="{\"path\": \"" + self.getFileId(file) + "\",\"include_media_info\": false,\"include_deleted\": false,\"include_has_explicit_shared_members\": false}")
 
-	    		)
+	    		
 		request_json = request.json()
 		request_json['Success'] = request.ok
 
