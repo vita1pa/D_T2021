@@ -36,7 +36,7 @@ def isUploadedBefore(context, name):
 @when('I request metadata of file "{name}" by its id')
 def requestFileMetadata(context, name):
 	global lastRequest
-	lastRequest = app.getFileMetaData(FILES+name)
+	lastRequest = app.getMetaData(FILES+name)
 
 
 @then('I receive metadata for file "{name}"')
